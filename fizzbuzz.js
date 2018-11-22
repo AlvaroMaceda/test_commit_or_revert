@@ -1,3 +1,5 @@
-module.exports = function fizzbuzz() {
-  return '1';
+function fizzbuzz(n) {
+  return n.toString();
 }
+
+module.exports = fizzbuzz;
