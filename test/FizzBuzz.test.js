@@ -27,5 +27,9 @@ describe('it', () => {
     expect(fizzbuzz(5)).to.eq('Buzz');
   })
 
+  it('returns FizzBuzz for 15', () => {
+    expect(fizzbuzz(15)).to.eq('FizzBuzz');
+  })
+
 
 })

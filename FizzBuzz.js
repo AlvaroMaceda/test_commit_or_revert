@@ -23,18 +23,24 @@ function buzz(n){
   return false
 }
 
+function fizzBuzz(n){
+  if (checkBuzz(n) && checkFizz(n))
+    return 'FizzBuzz'
+
+  return false
+}
+
+
 function toString(n){
   return n.toString()
 }
 
 function PEPE(n,...args){
   return args.map(f => f(n)).find(result => result !== false)
-
-  args.find((item)=>item(n));
 }
 
 function fizzbuzz (n) {
-  return PEPE(n, fizz, buzz, toString);
+  return PEPE(n, fizzBuzz, fizz, buzz, toString);
 }
 
 module.exports = fizzbuzz;
