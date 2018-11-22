@@ -35,12 +35,8 @@ function toString(n){
   return n.toString()
 }
 
-function PEPE(n,...args){
-  return args.map(f => f(n)).find(result => result !== false)
+function fizzBuzzBuilder(...args){
+  return (n) => args.map(f => f(n)).find(result => result !== false)
 }
 
-function fizzbuzz (n) {
-  return PEPE(n, fizzBuzz, fizz, buzz, toString);
-}
-
-module.exports = fizzbuzz;
+module.exports = fizzBuzzBuilder(fizzBuzz, fizz, buzz, toString);
