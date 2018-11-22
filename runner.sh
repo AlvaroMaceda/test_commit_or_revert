@@ -3,7 +3,7 @@
 TEST_OUTPUT=/tmp/tcr_ouput.log
 
 test () {
- npm test > $TEST_OUTPUT
+ npm test >> $TEST_OUTPUT
 }
 
 commit () {

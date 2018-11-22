@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const fizzbuzz = require('../fizzbuzz');
+const fizzbuzz = require('../FizzBuzz');
 
 describe('it', () => {
   it('works', () => {
