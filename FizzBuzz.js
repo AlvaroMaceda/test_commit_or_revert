@@ -30,6 +30,10 @@ function fizzBuzz(n){
   return false
 }
 
+function identity(n){
+  return n
+}
+
 function toString(n){
   return n.toString()
 }
@@ -38,4 +42,10 @@ function fizzBuzzBuilder(...args){
   return (n) => args.map(f => f(n)).find(result => result !== false)
 }
 
-module.exports = fizzBuzzBuilder(fizzBuzz, fizz, buzz, toString);
+const PEPE = fizzBuzzBuilder(fizzBuzz, fizz, buzz, identity)
+
+function ramon(n){
+  return toString(PEPE(n));
+}
+
+module.exports = ramon
