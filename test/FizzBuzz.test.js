@@ -10,8 +10,8 @@ describe('it', () => {
     expect(fizzbuzz(1)).to.eq('1');
   })
 
-  it('returns 78 when 78', () => {
-    expect(fizzbuzz(78)).to.eq('78');
+  it('returns 2 when 2', () => {
+    expect(fizzbuzz(2)).to.eq('2');
   })
 
 
