@@ -30,7 +30,6 @@ function fizzBuzz(n){
   return false
 }
 
-
 function toString(n){
   return n.toString()
 }
